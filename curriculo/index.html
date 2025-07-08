@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Guilherme Soares Fonseca</title>
+    <style>
+        /* Estilos base */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-gray: #ecf0f1;
+            --white: #fff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--white);
+        }
+        
+        /* Cabeçalho */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 20px;
+        }
+        
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 25px;
+            object-fit: cover;
+            border: 3px solid var(--light-gray);
+        }
+        
+        .header-text h1 {
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            font-size: 28px;
+        }
+        
+        .header-text p {
+            margin: 5px 0;
+            color: var(--secondary-color);
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+        }
+        
+        .contact-info span {
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        /* Seções */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        /* Experiência profissional */
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 18px;
+        }
+        
+        .job-date {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .company {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .job-description {
+            margin-left: 20px;
+        }
+        
+        .job-description li {
+            margin-bottom: 5px;
+        }
+        
+        /* Educação */
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .education-date {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+        
+        .institution {
+            font-weight: bold;
+        }
+        
+        /* Habilidades */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 3px;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .skill-list li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .skill-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .job-header, .education-header {
+                flex-direction: column;
+            }
+            
+            .job-date, .education-date {
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="foto.jpg" alt="Foto de perfil de Guilherme Soares Fonseca, homem profissional com traje formal e expressão confiante" class="profile-photo">
+        <div class="header-text">
+            <h1>Guilherme Soares Fonseca</h1>
+            <p>Idade: 23 anos</p>
+            <div class="contact-info">
+                <span><strong>Endereço:</strong> Rua José Arantes Costa Quadra 108 Lote 17 N 300, Cidade Jardim</span>
+                <span><strong>Telefone:</strong> (62) 99123-9612</span>
+                <span><strong>Email:</strong> Guilhermesoarespb@mail.com</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Objetivo</h2>
+        <p>Estou no início da minha trajetória profissional e procuro uma oportunidade para demonstrar meu talento, desenvolver minhas habilidades e contribuir de forma positiva para a equipe. Dedicação e empenho são os pilares que compensam minha experiência inicial.</p>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Histórico Profissional</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Garçom Aprendiz</span>
+                <span class="job-date">Junho 2022 - Outubro 2022</span>
+            </div>
+            <div class="company">Restaurante Fiorentina</div>
+            <ul class="job-description">
+                <li>Anotação de pedidos em papel ou aparelhos eletrônicos e conferência de comandas, garantindo praticidade aos clientes.</li>
+                <li>Atendimento direto ao público para alimentos e bebidas com eficiência, oferecendo os utensílios necessários para cada tipo de prato.</li>
+                <li>Aprendi a importância da organização, a me desenvolver e a trabalhar em grupo, ganhando experiência em como falar em público e interagir com os clientes, assim também fidelizá-los.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Agente de Serviços Mensageiro</span>
+                <span class="job-date">Dezembro 2022 - Fevereiro 2023</span>
+            </div>
+            <div class="company">Plaza Inn Augustos Hotel</div>
+            <ul class="job-description">
+                <li>Acompanhamento de chegada e saída de hóspedes, organização de bagagens.</li>
+                <li>Informar os hóspedes sobre as áreas do hotel, execução de pagamentos em bancos e em estabelecimentos comerciais, receber e distribuir correspondências, assim como documentos e encomendas.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Auxiliar de Barman</span>
+                <span class="job-date">Março 2023 - Abril 2023</span>
+            </div>
+            <div class="company">Quintal 86</div>
+            <ul class="job-description">
+                <li>Ajudar a fazer preparos para drinks e sucos, folhagem, fazer drinks e sucos.</li>
+                <li>Recolher copos e limpar a área do bar. Substituir barris de cerveja e garrafas de bebidas. Reabastecer baldes de gelo.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Operador de Caixa</span>
+                <span class="job-date">Junho 2023 - Janeiro 2024</span>
+            </div>
+            <div class="company">Panda Atacadão</div>
+            <ul class="job-description">
+                <li>Trabalhei como operador de caixa em um estacionamento de Shopping, me dediquei e me aprimorei, buscando sempre crescer na empresa.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Atendente</span>
+                <span class="job-date">Junho 2024 - Fevereiro 2025</span>
+            </div>
+            <div class="company">Bacio Di Latte</div>
+            <ul class="job-description">
+                <li>Atendente em uma das maiores sorveterias do país, com um fluxo bem alto de clientes.</li>
+                <li>Sempre dando o melhor atendimento, servindo gelatos em copos, casquinhas, fazendo casquinhas artesanais, trabalhando com a parte da confeitaria e também no caixa.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Suporte Técnico</span>
+                <span class="job-date">Abril 2025 - Atual</span>
+            </div>
+            <div class="company">Chat2Desk</div>
+            <ul class="job-description">
+                <li>Atualmente atuo na empresa Chat2Desk, na função de Suporte Técnico, prestando atendimento a clientes, solucionando dúvidas e problemas relacionados à plataforma.</li>
+                <li>Acompanhando fluxos de integração e contribuindo para a melhoria contínua dos serviços.</li>
+                <li>Tenho experiência com atendimento via chat, análise de situações técnicas, uso de ferramentas de automação e suporte em diferentes canais digitais.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        
+        <div class="education-item">
+            <div class="education-header">
+                <span class="degree">Ensino Médio</span>
+                <span class="education-date">Dezembro 2021</span>
+            </div>
+            <div class="institution">Escola Estadual Raimundo Gomes Nogueira, Manaus, AM</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Conhecimentos e Habilidades Técnicas</h2>
+        <ul class="job-description">
+            <li><strong>Informática:</strong> Nível intermediário</li>
+            <li><strong>Pacote Office:</strong> Word, Excel, PowerPoint</li>
+            <li><strong>Programação:</strong> Conhecimento básico em JavaScript e Python</li>
+            <li><strong>Automação:</strong> Estudando n8n e ferramentas de automação de processos</li>
+            <li><strong>Inteligência Artificial:</strong> Conhecimento geral em aplicações e uso de I.A.</li>
+            <li><strong>Formação Técnica:</strong> Curso de Bombeiro Civil (6 meses) – Formação completa com foco em prevenção e combate a incêndios, primeiros socorros e evacuação de áreas de risco</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Competências</h2>
+        <ul class="job-description">
+            <li>Facilidade de aprendizado e adaptação a novas tecnologias</li>
+            <li>Raciocínio lógico e pensamento analítico</li>
+            <li>Capacidade de trabalhar sob pressão e em situações de emergência</li>
+            <li>Proatividade e autonomia na resolução de problemas</li>
+            <li>Organização e responsabilidade no cumprimento de tarefas</li>
+            <li>Boa comunicação interpessoal e trabalho em equipe</li>
+            <li>Interesse contínuo por inovação, automações e inteligência artificial</li>
+            <li>Comprometimento com a segurança e bem-estar coletivo</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2 class="section-title">Idiomas</h2>
+        <ul class="job-description">
+            <li><strong>Inglês:</strong> Básico</li>
+            <li><strong>Espanhol:</strong> Básico</li>
+        </ul>
+    </div>
+</body>
+</html>
